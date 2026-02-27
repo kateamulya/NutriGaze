@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NutriGaze</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="navbar">
+    <h2>NUTRIGAZE</h2>
+    <ul>
+        <li><a href="{{ url_for('index') }}">Home</a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>
+        <li><a href="{{ url_for('predict_page') }}">Predict</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</div>
+
+<div class="hero">
+    <div class="hero-content">
+        <h3>Welcome to NutriGaze</h3>
+        <h1>GREENGUARD INSIGHTS</h1>
+        <p>Ensuring your produce is always fresh and healthy</p>
+        <br>
+        <a href="{{ url_for('predict_page') }}"><button>Get Started</button></a>
+    </div>
+</div>
+
+
+</body>
+</html>

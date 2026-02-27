@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About - NutriGaze</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <h2>NUTRIGAZE</h2>
+    <ul>
+        <li><a href="{{ url_for('index') }}">Home</a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>
+        <li><a href="{{ url_for('predict_page') }}">Predict</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</div>
+
+<!-- ABOUT SECTION -->
+<section class="about-section">
+
+    <div class="about-tag">ABOUT</div>
+
+    <h2 class="about-title">
+        Learn More <span>About Us</span>
+    </h2>
+
+    <p class="about-intro">
+        NutriGaze is a pioneering organization dedicated to enhancing the quality and
+        safety of your fruits and vegetables.
+    </p>
+
+    <div class="about-content">
+
+        <!-- LEFT SIDE -->
+        <div class="about-left">
+            <p>
+                Our team comprises innovative scientists, technologists, and agricultural experts
+                committed to leveraging advanced detection technologies to ensure the produce you
+                consume is fresh, healthy, and nutritious.
+            </p>
+
+            <ul>
+                <li>✔ Comprehensive analysis and grading of fruits and vegetables based on ripeness and nutritional content.</li>
+                <li>✔ Continuous monitoring of produce freshness from farm to table.</li>
+                <li>✔ Innovative solutions to minimize food waste by identifying and separating rotten produce early in the supply chain.</li>
+            </ul>
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="about-right">
+            <p>
+                Our team is our greatest asset. We are a diverse group of experts in fields such as
+                agricultural science, data analytics, software engineering, and food technology.
+                Together, we bring a wealth of knowledge and experience to tackle the challenges of
+                food quality and safety.
+            </p>
+
+            <button class="about-btn">Learn More</button>
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Predict</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<script src="script.js"></script>
+</head>
+<body>
+
+<div class="navbar">
+    <h2>NUTRIGAZE</h2>
+    <ul>
+        <li><a href="{{ url_for('index') }}">Home</a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>
+        <li><a href="{{ url_for('predict_page') }}">Predict</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</div>
+
+<div class="card predict-card">
+    <h2 style ="color: black;">Image Classification</h2>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="image" required>
+        <br><br>
+        <button class="btn" type="submit">Predict</button>
+    </form>
+</div>
+
+</body>
+</html>
